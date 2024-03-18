@@ -17,7 +17,7 @@ const curlPython = () => {
         type="text" 
         value={input} 
         onChange={(e) => setInput(e.target.value)} 
-        className="border border-gray-200 p-2 rounded mb-4"
+        className="border border-gray-200 p-2 rounded w-full mb-4 max-h-full max-w-xl h-48"
       />
       <button 
         onClick={handleConvert} 
@@ -28,7 +28,7 @@ const curlPython = () => {
       <textarea 
         readOnly 
         value={converted} 
-        className="border border-gray-200 p-2 rounded w-full h-32"
+        className="border border-gray-200 p-2 rounded w-full max-w-xl max-h-full h-48"
       />
     </div>
   );
